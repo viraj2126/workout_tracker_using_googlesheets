@@ -6,8 +6,8 @@ WEIGHT_KG = 69
 HEIGHT_CM = 178
 AGE = 20
 
-APP_ID = "1805b3ba"
-API_KEY ="3b2c3ee45892199364c4c9de26fa4b78"
+APP_ID = "yours"
+API_KEY ="yours"
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 
@@ -44,6 +44,6 @@ for exercise in result["exercises"]:
         }
     }
 
-    sheet_response = requests.post("https://api.sheety.co/a17b64cd7979705e6f55de1edeec7121/myWorkouts/workouts", json=sheet_inputs)
+    sheet_response = requests.post("yours", json=sheet_inputs)
 
     print(sheet_response.text)
